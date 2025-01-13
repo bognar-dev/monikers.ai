@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-
+import { Analytics } from "@vercel/analytics/react"
 import "./globals.css"
 
 import { siteConfig } from "@/config/site"
@@ -71,6 +71,7 @@ export default function RootLayout({
       <body
         className={`font-grafien bg-background antialiased`}
       >
+        <Analytics />
         <main className="">
           {children}
         </main>
