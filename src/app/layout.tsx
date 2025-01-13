@@ -12,20 +12,24 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   description: siteConfig.description,
   keywords: [
+    "Card Game",
+    "Party Game",
+    "Team Fun",
     "React",
     "Typescript",
-    "Tailwind CSS",
+    "Vercel AI SDK",
+    "Interactive Games",
     "Microinteractions",
-    "Motion",
-    "Creative developers",
+    "Vibrant Design",
+    "AI"
   ],
   authors: [
     {
-      name: "Daniel Petho",
-      url: "https://danielpetho.com",
+      name: "Niklas Bognar",
+      url: "https://bognar.co.uk",
     },
   ],
-  creator: "danielpetho",
+  creator: "Niklas Bognar",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -38,7 +42,7 @@ export const metadata: Metadata = {
         url: siteConfig.ogImage,
         width: 1200,
         height: 630,
-        alt: siteConfig.name,
+        alt: `${siteConfig.name} - A Fun and Engaging Card Game`,
       },
     ],
   },
@@ -47,7 +51,7 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
-    creator: "@nonzeroexitcode",
+    creator: "@nikibgnr",
   },
   icons: {
     icon: "/favicon.ico",
@@ -55,7 +59,8 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   manifest: `${siteConfig.url}/site.webmanifest`,
-}
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
